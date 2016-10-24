@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_input_layout"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_splash"
+                android:layout_weight="1"
+                android:textColorHint="#c4c4c4"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/margin_top_alert"
+            android:layout_marginRight="@dimen/margin_top_alert"
+            android:textSize="@dimen/text_size_button"
+            android:text="Enter the email address you registered with and we'll send you a link to reset your password."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_splash"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@color/red"
+            android:id="@+id/btn_login"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_button"
+            android:text="@string/reset_password" />
+
+    </LinearLayout>
+</LinearLayout>
